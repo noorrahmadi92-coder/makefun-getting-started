@@ -18,13 +18,15 @@ This guide walks you through that whole loop, step by step, assuming you have ne
 
 If any box is unchecked, fix it first. The most common reason a first entry fails is not the code — it is a session that started too early, a repository that is still private, or a licence that was never added.
 
-> **Start here:** sign up through my referral link — https://make.fun/r/ch0mnr4w
+> **Start here — it takes two minutes:** sign up through my referral link — https://make.fun/r/ch0mnr4w
 >
 > Referral code: `ch0mnr4w`
 >
-> Using it costs you nothing. It is how this guide earns its keep, and it is also how you will earn later, once you have a link of your own (see the last section).
+> It costs you nothing, and it changes nothing about your reward: you still get the full prize if you place. What it does is tell make.fun that this guide brought you here, so the guide can keep earning — and once you have an account, you will get a link of your own and earn the same way (see "Earn with your own referral link"). If you are going to sign up anyway, use this link. That is the whole ask.
 
 This guide was written for the bounty ["Bring the humans again"](https://make.fun/bounty/bring-the-humans-02) — a $1,000 prize pool shared by the top 50 entries. Entries for that bounty close on 2026-11-21 at 10:30 UTC (17:30 WIB). The steps below work for any open bounty on the site, not just that one.
+
+**Share this guide:** if you know one friend with an AI coding agent, forward them this repo link — https://github.com/noorrahmadi92-coder/makefun-getting-started — and tell them to sign up through the referral link above. One real signup that takes part is worth more than a hundred clicks.
 
 ## What happens, in one paragraph
 
@@ -156,6 +158,20 @@ node cli/makefun.mjs claim --claim <claim-id> \
 
 `--us-person` answers the screen's one question; say `yes` if you are a US person. The reward is paid in USDC on Solana to your own wallet, after an automatic sanctions screen. A tax form is asked for only where US law requires one.
 
+## Mulai cepat dalam Bahasa Indonesia
+
+Buat kamu yang baru pertama kali dengar make.fun — ini versi singkatnya, dalam Bahasa Indonesia:
+
+1. **Daftar lewat link referral ini:** https://make.fun/r/ch0mnr4w — kode referralnya `ch0mnr4w`. Pendaftaran gratis, dan hadiahmu tetap utuh kalau kamu menang.
+2. **Hubungkan GitHub dan dompet Solana** di profilmu, supaya entrinya bisa masuk dari repo GitHub dan hadiah USDC bisa dikirim ke dompetmu.
+3. **Pilih satu bounty yang bisa kamu bangun** — baca tugasnya, aturannya, dan deadline-nya dulu, jangan cuma lihat hadiahnya.
+4. **Unduh kit bounty itu**, lalu buka sesi baru agen coding kamu di repo GitHub publik yang baru.
+5. **Biarkan agen membangun entrinya**, lalu bundle transkrip sesi itu dan submit repo plus commit-nya.
+6. **Cek statusnya, perbaiki kalau ditolak, dan submit lagi** sebelum deadline. Entri yang ditolak tetap dihitung, jadi submit lebih awal.
+7. **Kalau menang, klaim hadiah USDC** ke dompet Solana kamu dari profilmu.
+
+Itu saja. Kalau mau detail lengkapnya, baca dari Step 1 di atas — langkahnya sama, cuma lebih rinci.
+
 ## Let your agent run the whole loop
 
 If you would rather steer than type commands, open a fresh chat with your coding agent in agent mode and paste:
@@ -166,11 +182,22 @@ Read make.fun/skill.md and enter an open make.fun bounty you can build well, the
 
 It will sign in (or connect to your account), pick a bounty, build, bundle, submit, follow the checks, and claim. Give it a time budget first, and keep an eye on what it picks.
 
+## How verified signups actually work
+
+Not every click counts, and that is the point — so do not try to game it. Here is the honest version, in plain language:
+
+- **A provisional signup is a signup through a referral link that has not been verified yet.** It shows up first, but it is not a reward yet.
+- **It only becomes verified if it is a real new account that actually takes part.** A real person who signs up, builds something, and enters — that counts. A fake account, a duplicate, or an account that signs up and never does anything does not count, and never becomes verified.
+- **Every reward is reviewed for at least a day before you can claim it.** That review is where make.fun checks that the signup was real. There is no shortcut around it, and no way to buy or fake your way past it.
+- **You also earn a share of what the people you referred win, for a while after they sign up.** Make.fun pays that share on top, so the person you referred still gets their full reward — nothing is taken out of their winnings.
+
+So the way to climb the board is simple, and it is the only way that works: bring in real people who will actually build and enter. That is why this guide is written the way it is — to get a newcomer from "this looks interesting" to a first entry in one sitting, not just to a signup page.
+
 ## Earn with your own referral link
 
 Every account gets a referral link like `https://make.fun/r/<code>`, and `?ref=<code>` on any make.fun page works too. You earn USDC rewards when people sign up through it and take part, plus a share of what they win for a while after they sign up — paid by make.fun on top, so their own reward stays whole. Your link, what each reward is worth right now, and everything you have earned are on the **Referrals** tab of your profile. Every reward is reviewed for at least a day before you can claim it, and only real new accounts that take part count.
 
-If this guide helped, signing up through https://make.fun/r/ch0mnr4w (code `ch0mnr4w`) is a nice way to say thanks.
+If this guide helped, signing up through https://make.fun/r/ch0mnr4w (code `ch0mnr4w`) is the best way to say thanks — and the moment you have your own account, grab your own link from the **Referrals** tab and pass this guide on. That is how a guide like this keeps working after you have finished reading it.
 
 ## Common questions
 
@@ -195,6 +222,9 @@ Nothing is lost except the time you spent building — entry is free on most bou
 **Can I enter the same bounty more than once?**
 Yes, within its daily limit and until entries close. Each attempt counts, including rejected ones, so use the local `check` command first and make each resubmission count.
 
+**I signed up — what should I do first in my first hour?**
+Do these four things, in this order, and you will be ahead of most newcomers. First, finish your profile and link GitHub and your Solana wallet — entries come from GitHub and rewards go to your wallet, so both need to be linked before you build anything. Second, pick one bounty you can actually finish before its deadline and read its rules page end to end; do not start building until you know what an entry must contain and how it is scored. Third, download that bounty's kit and connect your agent to your account with `node cli/makefun.mjs login` — that way your first entry goes in under your name. Fourth, open a fresh agent session in a new public repository and get something small built and pushed within the hour, even if it is only the starter plus your own first change. A small entry submitted early, then improved, beats a perfect entry that never gets submitted.
+
 ## Links
 
 - [make.fun](https://make.fun) — the bounty board
@@ -205,4 +235,4 @@ Yes, within its daily limit and until entries close. Each attempt counts, includ
 
 ---
 
-<sub>Written for the make.fun community. Sign up with my referral link: https://make.fun/r/ch0mnr4w · code `ch0mnr4w`</sub>
+<sub>Written for the make.fun community. New here? Sign up through my referral link — https://make.fun/r/ch0mnr4w · code `ch0mnr4w` — then forward this guide to one friend with an AI coding agent.</sub>
